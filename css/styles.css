@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Reddit Sans Condensed", sans-serif;
+}
+
+#header{
+    box-sizing: border-box;
+}
+
+#header .top__header{
+    background-color: #ff8e2b;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+#header .middle__header{
+    background-color: #0d2137;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#header .middle__header img{
+    height: 50px;
+}
+
+#header .middle__header .search__bar{
+    background-color: #fff;
+    width: 500px;
+    height: 40px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#header .middle__header .search__bar input{
+    width: 90%;
+    padding: 5px 15px;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #0d2137;
+}
+
+#header .middle__header .languages__and__login{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#header .middle__header .languages__and__login .langs{
+    position: relative;
+    display: inline-block;
+}
+
+#header .middle__header .languages__and__login .langs a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 0;
+    transition: all 0.5s;
+}
+
+#header .middle__header .languages__and__login .langs a img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+#header .middle__header .languages__and__login .langs .change__language{
+    display: none;
+    position: absolute;
+    background-color: #0d2137;
+    padding: 10px 20px;
+    margin: 1px -50px;
+    min-width: 160px;
+    z-index: 1;
+    gap: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border-top: 1px solid #ff8e2b;
+}
+
+#header .middle__header .languages__and__login .langs:hover .change__language{
+    display: block;
+}
+
+#header .middle__header .languages__and__login .langs:hover .change__language a:hover{
+    color: #ff8e2b;
+}
+
+#header .middle__header .languages__and__login button{
+    padding: 0.9em 1.2em;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ff8e2b;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#header .middle__header .languages__and__login button:hover{
+    background-color: #ff7c1a; /* Slightly darker color for hover */
+    color: #fff8e1; /* Lighter text color on hover */
+    transform: scale(1.1); /* Slight scaling effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+#footer{
+    display: flex;
+    background-color: #0d2137;
+    bottom: 0;
+    margin: 40px;
+}
+
